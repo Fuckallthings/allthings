@@ -1,0 +1,54 @@
+.container {
+    text-align: center;
+}
+
+.contentContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.contactContainer {
+    border-radius: 5px;
+    border: 1px solid black;
+    background-image: url(pho.jpeg);
+    color: white;
+    height: 500px;
+    width: 300px;
+    padding: 20px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: #f9004d
+}
+
+
+.contactContainer:hover {
+    background: linear-gradient(180deg, #fc004d 0, #000);
+
+}
+
+.contactContainer1 {
+    background-image: url(pho2.jpeg);
+    color: white;
+    height: 500px;
+    width: 300px;
+    padding: 20px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.contactContainer2 {
+    background-image: url(pho3.jpeg);
+    color: white;
+    height: 500px;
+    width: 300px;
+    padding: 20px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}

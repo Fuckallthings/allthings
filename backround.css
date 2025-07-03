@@ -1,0 +1,25 @@
+.container:hover {
+    background: linear-gradient(90deg, #f61b10, #ef0963);
+    color: #f9004d;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    
+}
+
+.contentContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    border: solid black;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container div:hover {
+    background: linear-gradient(90deg, #f61b10, #ef0963);
+}
