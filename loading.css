@@ -1,0 +1,40 @@
+body {
+    height: 100%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+html {
+    height: 100%;
+}
+.box {
+    color: white;
+    display: flex;
+    gap: 100px;
+}
+ .fade {
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+ }
+ @keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+ }
+ .pulse {
+    font-size: 50px;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-name: pulseColor;
+    animation-duration:1s;
+    animation-direction: alternate;
+    width: 100px;
+    height: 100px;
+}
+@keyframes pulseColor {
+   0% {transform: scale(1);}
+   50% {transform: scale(1.1);}
+   100% {transform: scale(1);}
+}
+

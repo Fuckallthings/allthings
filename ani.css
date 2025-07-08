@@ -1,0 +1,70 @@
+@keyframes example {
+from {left: 0;}
+to {left: 300px;}
+to {background-color: yellow;}
+}
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+
+}
+@keyframes fadeIn {
+    to { 
+        opacity: 1;
+    }
+}
+.fade {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+.pulse {
+    background-color: red;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-name: pulseColor;
+    animation-duration:1s;
+    animation-direction: alternate;
+    width: 100px;
+    height: 100px;
+}
+@keyframes pulseColor {
+   0% {transform: scale(1);}
+   50% {transform: scale(1.1);}
+   100% {transform: scale(1);}
+}
+@keyframes colorCycle {
+    0% {background-color: blue;}
+    33% {background-color: green;}
+    66% {background-color: yellow;}
+    100% {background-color: blue;}
+}
+div {
+    position: relative;
+    animation-direction: 2s;
+    animation-name: colorCycle;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+@keyframes slideDown {
+    from {
+        opacity: 0;
+    transform: translateY(-50px);
+    }
+    to { 
+        opacity: 1;
+    transform: translateY(0);
+    }
+}
+h1 {
+    position: relative;
+    animation-name: slideDown;
+    width: 100px;
+    height: 100px;
+    animation-duration: 2s;
+}
+    
