@@ -1,0 +1,70 @@
+p::first-letter {
+    font-size: 2em;
+    color: red;
+}
+.button:hover {
+    background-color: brown;
+}
+.button {
+    background-color: aliceblue;
+}
+.progress-bar::before {
+    content: "";
+    background-color: pink;
+    width: 0%;
+    height: 50px;
+    display: block;
+    transition: all ease 3s;
+    border-radius: 30px;
+}
+.progress-bar:hover::before{
+    width: 800px;
+    height: 50px
+}
+
+.content {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.content::before{
+    content:"view details";
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+     background-color: black;
+     color: white;
+    transition: all ease 1.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content:hover::before{
+    opacity: 0.7;
+}
+.contentContainer {
+    position: relative;
+    width: 300px;
+    background-color: aquamarine;
+}
+.contentContainer::after{
+    content: "tooltip";
+    opacity: 0;
+    background-color:black;
+    border-radius: 20px;
+    color: brown;
+    display: flex;
+    margin: 50px;
+    transition: all 3s ease;
+    top: 0px;
+    position: absolute;
+}
+.contentContainer:hover::after{
+    opacity: 1;
+}
